@@ -12,12 +12,11 @@ const GlobalStyles = createGlobalStyle`
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-
   }
   body {
     font-family: ${props => props.theme.fonts.main};
     font-size: 1.6rem;
-    background: ${props => props.theme.colors.background1};
+    background: linear-gradient(to right,#ed0eb2, #8e3bed);
     color: ${props => props.theme.colors.primary1};
     cursor: default;
 

@@ -45,10 +45,10 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
-      <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+      <SectionText style={{textAlign:'justify'}}>
+        Software Developer with a demonstrated history of working in the tech industry. Skilled in Full stack development at a professional level. Currently, a grad student at the University of Cincinnati diving deeper into Computer Science.
       </SectionText>
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+      <CarouselContainer style={{padding:'10px'}} ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode
@@ -92,7 +92,7 @@ const Timeline = () => {
                     </defs>
                   </CarouselItemImg>
                 </CarouselItemTitle>
-                <CarouselItemText>{item.text}</CarouselItemText>
+                <CarouselItemText style={{textAlign:'justify'}}>{item.text}</CarouselItemText>
               </CarouselItem>
             </CarouselMobileScrollNode>
           ))}
